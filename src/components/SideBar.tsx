@@ -5,6 +5,7 @@ export default function SideBar() {
         <Box sx={{ backgroundColor: 'red', width: "15%", height: "100vh" }}>
             <Grid container sx={{ backgroundColor: "blue" }}>
                 <Grid item xs={12} sx={{ backgroundColor: "green" }}>
+                    
                     <Typography variant="body1">Search</Typography>
                 </Grid>
 
