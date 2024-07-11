@@ -1,4 +1,4 @@
-import { Search } from "@mui/icons-material";
+import { Home, Inbox, Search, Settings } from "@mui/icons-material";
 import { Box, Grid, Typography } from "@mui/material";
 
 export default function SideBar() {
@@ -11,14 +11,17 @@ export default function SideBar() {
                 </Grid>
 
                 <Grid item sx={{ display: "flex", alignItems: "center", backgroundColor: "yellow", padding: "0.5rem" }}>
+                    <Home sx={{ fontSize: "1.4rem", marginRight: "0.5rem" }} />
                     <Typography variant="body1">Home</Typography>
                 </Grid>
 
                 <Grid item sx={{ display: "flex", alignItems: "center", backgroundColor: "purple", padding: "0.5rem" }}>
+                    <Inbox sx={{ fontSize: "1.4rem", marginRight: "0.5rem" }} />
                     <Typography variant="body1">Inbox</Typography>
                 </Grid>
 
                 <Grid item sx={{ display: "flex", alignItems: "center", backgroundColor: "orange", padding: "0.5rem" }}>
+                    <Settings sx={{ fontSize: "1.4rem", marginRight: "0.5rem" }} />
                     <Typography variant="body1">Settings & Members</Typography>
                 </Grid>
             </Grid>
