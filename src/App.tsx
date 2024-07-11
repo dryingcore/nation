@@ -1,14 +1,12 @@
-import { Box, Container } from "@mui/material";
+import { Box } from "@mui/material";
 import MainContent from "./components/MainContent";
 import SideBar from "./components/SideBar";
 
 export default function App() {
     return (
-        <Container sx={{
-            width: "100vw", height: "100vh", backgroundColor: "red"
-        }}>
+        <Box sx={{ display: "flex" }}>
             <SideBar />
             <MainContent />
-        </Container>
+        </Box>
     )
 }
