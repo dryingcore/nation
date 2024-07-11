@@ -3,25 +3,25 @@ import { Box, Grid, Typography } from "@mui/material";
 
 export default function SideBar() {
     return (
-        <Box sx={{ backgroundColor: 'red', width: "15%", height: "100vh" }}>
-            <Grid container sx={{ backgroundColor: "blue" }}>
-                <Grid item xs={12} sx={{ backgroundColor: "green" }}>
-                    <Search sx={{ fontSize: "1.4rem" }} />
+        <Box sx={{ backgroundColor: 'red', width: "15%", height: "100vh", padding: "1rem" }}>
+            <Grid container direction="column" spacing={2} sx={{ height: "100%", backgroundColor: "blue" }}>
+                <Grid item sx={{ display: "flex", alignItems: "center", backgroundColor: "green", padding: "0.5rem" }}>
+                    <Search sx={{ fontSize: "1.4rem", marginRight: "0.5rem" }} />
                     <Typography variant="body1">Search</Typography>
                 </Grid>
 
-                <Grid item xs={12} sx={{ backgroundColor: "yellow" }}>
+                <Grid item sx={{ display: "flex", alignItems: "center", backgroundColor: "yellow", padding: "0.5rem" }}>
                     <Typography variant="body1">Home</Typography>
                 </Grid>
 
-                <Grid item xs={12} sx={{ backgroundColor: "purple" }}>
+                <Grid item sx={{ display: "flex", alignItems: "center", backgroundColor: "purple", padding: "0.5rem" }}>
                     <Typography variant="body1">Inbox</Typography>
                 </Grid>
 
-                <Grid item xs={12} sx={{ backgroundColor: "orange" }}>
+                <Grid item sx={{ display: "flex", alignItems: "center", backgroundColor: "orange", padding: "0.5rem" }}>
                     <Typography variant="body1">Settings & Members</Typography>
                 </Grid>
             </Grid>
         </Box>
-    )
+    );
 }
