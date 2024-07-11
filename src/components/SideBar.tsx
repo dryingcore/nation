@@ -1,7 +1,7 @@
 import { Search } from "@mui/icons-material";
 import { Box, Grid, Typography } from "@mui/material";
 
-function SideBar() {
+export default function SideBar() {
     return (
         <Box sx={{ backgroundColor: 'red', width: "100%", height: "100vh", padding: "1rem" }}>
             <Grid container direction="column" spacing={2}>
