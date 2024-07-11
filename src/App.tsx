@@ -1,9 +1,14 @@
+import { Box, Container } from "@mui/material";
+import MainContent from "./components/MainContent";
 import SideBar from "./components/SideBar";
 
 export default function App() {
     return (
-        <div>
+        <Container sx={{
+            width: "100vw", height: "100vh", backgroundColor: "red"
+        }}>
             <SideBar />
-        </div>
+            <MainContent />
+        </Container>
     )
 }
