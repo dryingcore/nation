@@ -3,7 +3,7 @@ import NoteCard from "./NoteCard";
 
 export default function MainContent() {
     // Array of titles for NoteCards
-    const titles = ["a"];
+    const titles = ["a", "b", "c", "d", "e", "f"]
 
     return (
         <Box sx={{ display: "flex", backgroundColor: 'orange', width: "100%", height: "100vh", padding: "1rem" }}>
