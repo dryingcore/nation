@@ -3,10 +3,13 @@ import NoteCard from "./NoteCard";
 
 export default function MainContent() {
     return (
-        <Box sx={{ backgroundColor: 'orange', width: "100%", height: "100vh", padding: "1rem", display: "flex", gap: "1rem" }}>
-            <NoteCard title="First nation note" />
-            <NoteCard title="First nation note" />
-            <NoteCard title="First nation note" />
+        <Box sx={{ backgroundColor: 'orange', width: "100%", height: "100vh", padding: "1rem", gap: "1rem" }}>
+
+            <Box sx={{ display: "flex", flexDirection: "column", backgroundColor: 'purple', width: "100%", height: "30%", padding: "1rem", gap: "1rem" }}>
+                <NoteCard title="First nation note" />
+                <NoteCard title="First nation note" />
+                <NoteCard title="First nation note" />
+            </Box>
         </Box>
     );
 }
