@@ -14,7 +14,7 @@ export default function MainContent() {
                 gap: "1rem",
             }}
         >
-            {[...Array(8).keys()].map((index) => (
+            {[...Array(9).keys()].map((index) => (
                 <NoteCard key={index} title={`Note ${index + 1}`} />
             ))}
         </Box>
