@@ -4,7 +4,7 @@ import NoteCard from "./NoteCard";
 export default function MainContent() {
     return (
         <Box sx={{ backgroundColor: 'orange', width: "100%", height: "100vh", padding: "1rem" }}>
-            <NoteCard />
+            <NoteCard title="First nation note" />
         </Box>
     );
 }

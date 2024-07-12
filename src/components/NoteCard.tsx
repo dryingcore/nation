@@ -1,9 +1,19 @@
-import { Box } from "@mui/material";
+import { Box, Card, CardContent, Typography } from "@mui/material";
 
-export default function NoteCard() {
+interface NoteCardProps {
+    title: string;
+}
+
+const NoteCard: React.FC<NoteCardProps> = (props) => {
     return (
-        <Box sx={{ backgroundColor: 'orange', width: "100%", height: "100vh", padding: "1rem" }}>
-            <h1>a</h1>
+        <Box sx={{ backgroundColor: 'blue', height: "30%", padding: "1rem" }}>
+            <Card sx={{ width: "20%", height: "100%" }}>
+                <CardContent>
+                    <Typography variant="body1">{props.title}</Typography>
+                </CardContent>
+            </Card>
         </Box>
     );
 }
+
+export default NoteCard;
