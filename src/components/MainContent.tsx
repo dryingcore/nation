@@ -9,7 +9,6 @@ export default function MainContent() {
         <Box
             sx={{
                 display: "flex",
-                flexWrap: "wrap",
                 backgroundColor: 'orange',
                 width: "100%",
                 height: "100vh",
