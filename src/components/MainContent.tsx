@@ -3,15 +3,20 @@ import NoteCard from "./NoteCard";
 
 export default function MainContent() {
     return (
-        <Box sx={{ display: "flex", backgroundColor: 'orange', width: "100%", height: "100vh", padding: "1rem", gap: "1rem"}}>
-            <NoteCard title="Hello, world!" />
-            <NoteCard title="Hello, Kotlin!" />
-            <NoteCard title="John Doe" />
-            <NoteCard title="John Doe" />
-            <NoteCard title="John Doe" />
-            <NoteCard title="John Doe" />
-            <NoteCard title="John Doe" />
-            <NoteCard title="John Doe" />
+        <Box
+            sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                backgroundColor: 'orange',
+                width: "100%",
+                height: "100vh",
+                padding: "1rem",
+                gap: "1rem",
+            }}
+        >
+            {[...Array(8).keys()].map((index) => (
+                <NoteCard key={index} title={`Note ${index + 1}`} />
+            ))}
         </Box>
     );
 }
