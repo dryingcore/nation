@@ -6,7 +6,7 @@ interface NoteCardProps {
 
 const NoteCard: React.FC<NoteCardProps> = (props) => {
     return (
-        <Box sx={{ backgroundColor: 'blue', height: "30%", padding: "1rem" }}>
+        <Box sx={{ display: "flex", alignItems: "center" ,backgroundColor: 'blue', height: "30%", padding: "1rem" }}>
             <Card sx={{ width: "20%", height: "100%" }}>
                 <CardContent>
                     <Typography variant="body1">{props.title}</Typography>
