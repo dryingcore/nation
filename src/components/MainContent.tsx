@@ -2,6 +2,9 @@ import { Box } from "@mui/material";
 import NoteCard from "./NoteCard";
 
 export default function MainContent() {
+    // Array of titles for NoteCards
+    const titles = ["Hello, world!", "Hello, Kotlin!", "John Doe", "Jane Doe", "Lorem Ipsum", "Dolor Sit"];
+
     return (
         <Box
             sx={{
@@ -14,8 +17,8 @@ export default function MainContent() {
                 gap: "1rem",
             }}
         >
-            {[...Array(9).keys()].map((index) => (
-                <NoteCard key={index} title={`Note ${index + 1}`} />
+            {titles.map((title, index) => (
+                <NoteCard key={index} title={title} />
             ))}
         </Box>
     );
