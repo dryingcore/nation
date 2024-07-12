@@ -15,7 +15,7 @@ const NoteCard: React.FC<NoteCardProps> = (props) => {
                 </CardContent>
 
                 <CardContent>
-                    <Typography variant="body1">This is a note</Typography>
+                    <Typography variant="body1">This is a note description, Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis natus aspernatur illum fugiat, assumenda officiis soluta aliquam vel excepturi modi magnam cumque sint laboriosam consequatur possimus impedit. Doloremque, vero asperiores.</Typography>
                 </CardContent>
             </Card>
         </Box>
