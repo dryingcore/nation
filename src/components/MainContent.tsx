@@ -4,14 +4,14 @@ import NoteCard from "./NoteCard";
 export default function MainContent() {
     // Array of titles for NoteCards
     const notes = [
-        { title: "Note 1" },
-        { title: "Note 2" },
-        { title: "Note 3" },
-        { title: "Note 4" },
-        { title: "Note 5" },
-        { title: "Note 6" },
-        { title: "Note 7" },
-        { title: "Note 8" }
+        { title: "This is a note" },
+        { title: "This is another note" },
+        { title: "This is yet another note" },
+        { title: "This is yet another note" },
+        { title: "This is yet another note" },
+        { title: "This is yet another note" },
+        { title: "This is yet another note" },
+        { title: "This is yet another note" }
     ];
 
     return (
